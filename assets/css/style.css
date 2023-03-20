@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-white: #ffffff;
+    --color-blue: #5D6C89;
+    --color-turquoise: #36D6E7;
+    --color-tangerine: #FEB06A;
+    --color-cream: #FBF6F3;
+    --gradiente-start: rgba(0, 0, 0, 0.363);
+    --gradiente-end: rgba(20, 26, 24, 0.826);
+    --transition: .5s;
+ 
+}
+/* --formatações genericas-- */
+
+h1,h2,h3{    
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+ul,li {
+    list-style: none;
+}
+
+img {
+   width:  100%;
+}
+
+a {
+    text-decoration: none;
+    color: (var(--color-white));
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--color-tangerine);
+}
+
+
+/* -- fim formatações genericas-- */
+
+/* Inicio header */
+
+.header-page{
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+      
+}
+
+.header-menu ul{
+    margin:20px;
+    font-weight: bold;
+   display: flex;
+
+
+}
+
+.header-menu li {
+    margin-left: 20px;
+    font-family:'Quicksand', sans-serif;
+    color: var(--color-blue)
+}
+.logo
+{background-image: url(../images/NÓS\ TURISTAS!.jpg);
+width: 200px;
+height: 80px;
+background-size: 150px 70px;
+background-repeat: no-repeat;
+display:flex;
+justify-content: flex-end;
+position: absolute;
+top:0;
+left: 0;
+}
+
+/* Fim header */
+
+/* Inicio Hero */
+
+.hero { 
+    margin-top: 20px;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)), url(../images/deserto.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+
+}
+.hero h1 { color: var(--color-white);
+font-size: 9vmin;
+
+  
+}
+   
+.hero h2 {
+    padding-top: 20px;
+    color: #ffffff;
+font-size:5vmin;
+}
+
+.hero p{ padding-top: 20px;
+color: var(--color-white);}
+
+.btn{ 
+    margin-top: 30px;
+    color: var(--color-white);
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--color-blue);
+    border: 5px solid var(--color-blue);
+    padding: 8px 55px;
+    transition: var(--transition);}
+
+.btn:hover
+{ color: var(--color-tangerine);
+background-color: #ffffff00;
+border: 2px solid;}
+
+    /* Fim do Hero */
+
+    /* Inicio destinos */
+    .destinos
+    {
+   width: 90%;
+   margin: auto;
+   min-height: 100vh;
+      
+    }
+
+.destinos h2 {
+    font-size: 40px;
+    color:var(--color-blue);
+    margin-top: 50px;
+    text-align: center;
+       }
+
+.destinos p
+{  text-align: center;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+.destinos div{
+    width:100%;
+    margin: 20px 0;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+
+.destinos img {
+width: 100%;
+height: 400px;
+box-shadow:  -20px -20px 60px #b8b8b8;
+margin: 10px 0;
+transition: var(--transition);
+
+}
+.destinos img:hover {
+    transform: scale(1.2);
+    
+
+}
+
+.destinos figcaption {
+text-align: center;
+font-family: 'Quicksand', sans-serif;
+font-size: 20px;
+color: var(--color-blue);
+transition:var(--transition);
+
+}
+ .a figcaption {
+    text-decoration: none;
+     }
+
+ .a:hover figcaption {  
+    color: var(--color-tangerine);
+       
+ }
+ /* Fim destinos */
+
+  /* Inicio Australia */
+
+.australia {
+width: 100%;
+min-height: 30vh;
+padding-top: -20px;
+column-count: 2;
+margin-bottom: 50px;
+background-color:#ebebeb;
+}
+
+.coluna-australia
+{
+column-width: 50%;
+column-gap: 10px;
+margin:0 10px;
+}
+
+.australia img{
+    width: 600px;
+    height: 800px;
+    margin-top: -30px;
+
+}
+.coluna-texto
+{ padding-top: 20px;
+color: var(--color-blue);
+text-align: center;
+margin-bottom: 40px;
+
+
+}
+.australia p
+{
+padding-right: 20px;
+text-align: left;
+margin-bottom: 50px;
+}
+ 
+ /* fim Australia */
+
+  /* Inicio Sobre */
+
+ .sobre {
+width:80%;
+ min-height: 30vh;
+ margin: auto;
+ column-count: 2;
+ 
+  
+  }
+ 
+.coluna-sobre {
+    column-width: 50%;
+    column-gap: 10px;
+    margin:30px 10px;
+   
+    }
+
+ .sobre h2 {
+ text-align: center;
+ margin-top: 50px;
+  }
+ 
+ .sobre img {
+    width: 500px;
+    height: 500px;
+    align-items: center;
+   margin: 40px 0;
+    box-shadow:  -20px -20px 60px #b8b8b8;
+    }
+
+ .sobre p {
+    text-align: left;
+    margin: 20px 10px 10px 20px;
+    padding-bottom: 50px;
+   
+      }
+
+/* Fim Sobre */
+
+/* Galeria */
+h2 {text-align: center;
+color: #5D6C89;
+margin-top: 50px;
+margin-bottom: 20px;
+}
+
+p{padding: 10px;
+text-align: center;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.gallery-item {
+    width: 28%;
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 30px #ccc;
+    transition: var(--transition);
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item img {
+    width: 90%;
+    border-radius: 7px;
+}
+
+.gallery-item h3 {
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.gallery-item p {
+    margin: 0 0 30px;
+    width: 80%
+}
+
+/* Fim Galeria */
+
+
+
+
+/* Inicio Contato */
+
+  
+/* Fim Contato */
+
+/* Inicio footer */
+
+ footer {
+    
+    bottom: 0;
+    background-color: var(--color-blue);
+    color: var(--color-cream);
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+
+ /* Fim footer*/
+
