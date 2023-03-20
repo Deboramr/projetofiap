@@ -51,11 +51,12 @@ a:hover {
 /* Inicio header */
 
 .header-page{
-    height: 50px;
-    padding: 0 30px;
+    height: 60px;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
 
       
 }
@@ -64,18 +65,17 @@ a:hover {
     margin:20px;
     font-weight: bold;
    display: flex;
-
+   
 
 }
 
 .header-menu li {
     margin-left: 20px;
     font-family:'Quicksand', sans-serif;
-    color: var(--color-blue)
+    color: var(--color-blue);
 }
 .logo
-{background-image: url(../images/NÓS\ TURISTAS!.jpg);
-width: 200px;
+{width: 200px;
 height: 80px;
 background-size: 150px 70px;
 background-repeat: no-repeat;
